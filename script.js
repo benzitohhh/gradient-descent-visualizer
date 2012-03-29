@@ -15,7 +15,7 @@ var fixed = [0,I-1];
 
 /*
     TODO:
-        1. visualise a single path (canvas? )
+        1. visualise a single path (canvas? ). Do a tutorial now!
 */
 
 
