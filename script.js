@@ -1,23 +1,17 @@
 var path = [
-    [0, 0],
-    [0, 1],
-    [0, 2],
-    [1, 2],
-    [2, 2],
-    [3, 2],
-    [4, 2],
-    [4, 3],
-    [4, 4]
-];
+        [0, 0],
+        [0, 1],
+        [0, 2],
+        [1, 2],
+        [2, 2],
+        [3, 2],
+        [4, 2],
+        [4, 3],
+        [4, 4]
+    ];
 var I = path.length;
 var J = path[0].length;
 var fixed = [0,I-1];
-
-/*
-    TODO:
-        1. visualise a single path (canvas? )
-*/
-
 
 log(path);
 var snapshots = smooth(path);
