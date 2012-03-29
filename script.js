@@ -20,6 +20,7 @@ var fixed = [0,I-1];
 
 
 
+
 log(path);
 var snapshots = smooth(path);
 log(snapshots[snapshots.length-1]);
