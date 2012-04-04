@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Title</title>
+<style>
+#function-code {
+    width: 535px;
+    height: 100px;
+}
+#xy-graph {
+    width: 535px;
+    height: 400px;
+    border: 1px solid;
+}
+</style>
+<link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+<!-- Grab Google CDN's jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body class="mari">
+    <textarea id="function-code">var F = function(x) {
+      return Math.sin(x) ;
+      // Try:
+      //  return x*x  ;
+    } ;
+    </textarea>
+    <center>
+        <input type="button" onclick="Draw();" value="Draw!">
+    </center>
+    <canvas id="xy-graph">
+     CANVAS NOT SUPPORTED IN THIS BROWSER!
+    </canvas>
+    <script src="canvastest.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        jQuery(function() {
+            //init();
+            test();
+            
+            
+        });
+    </script>
+</body>
+</html>
+
