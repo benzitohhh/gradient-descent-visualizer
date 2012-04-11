@@ -12,7 +12,26 @@ There are a couple of things you should do first, before you can use all of Git'
   * Push the commit the remote
     `git push [remote name] master` [Enter]
 
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
 
-Happy coding!
+
+
+VOGUE
+********
+
+1. start VOGUE:
+	cd ~/Desktop
+	vogue .
+
+2. Access some HTML files via Apache
+	1. put files/folder on the Desktop
+	2. they're now accessible at http://localhost/
+	i.e. http://localhost/gradient-descent-visualizer/
+
+3. Inject vogue client into page
+    i.e. click on the bookmarklet
+    (also available at http://localhost:8001/)
+    (or insert the script tag...)
+
+Now you should be able to change a css file,
+and see the results instantly.
+

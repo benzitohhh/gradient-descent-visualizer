@@ -32,6 +32,8 @@ function test() {
     };
     ctx.strokeStyle = '#eee';
     ctx.stroke();
+
+    
 }   
 
 
