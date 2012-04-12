@@ -1,0 +1,19 @@
+.recatangle {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}

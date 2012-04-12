@@ -1,0 +1,10 @@
+TODO:
+
+0. install http://meteor.com/
+SHOW peeps dem!
+
+1. Add canvas support, do a tutorial....
+http://stackoverflow.com/questions/1510512/how-to-draw-points-in-x-y-positions-using-javascript
+
+2. Add a xy chart from flot:
+http://code.google.com/p/flot/

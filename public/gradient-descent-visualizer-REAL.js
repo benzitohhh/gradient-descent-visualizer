@@ -1,29 +1,69 @@
-var path = [
-    [0, 0],
-    [0, 1],
-    [0, 2],
-    [1, 2],
-    [2, 2],
-    [3, 2],
-    [4, 2],
-    [4, 3],
-    [4, 4]
-];
-var I = path.length;
-var J = path[0].length;
-var fixed = [0,I-1];
+if (Meteor.is_client) {
+    // client code here (vars declared here are effectively global)
+    // i.e. do NOT declare any var
 
-/*
-    TODO:
-        1. visualise a single path (canvas haha) Do a tutorial now!
-*/
+    Meteor.startup(function() {
+        // called when DOM is ready
+        // i.e. equaivalent to jQuery.ready()
+        jQuery("#r1").hide();
+    });
+    
+}
 
 
 
 
-log(path);
-var snapshots = smooth(path);
-log(snapshots[snapshots.length-1]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var path = [
+//     [0, 0],
+//     [0, 1],
+//     [0, 2],
+//     [1, 2],
+//     [2, 2],
+//     [3, 2],
+//     [4, 2],
+//     [4, 3],
+//     [4, 4]
+// ];
+//     
+// var I = path.length;
+// var J = path[0].length;
+// var fixed = [0,I-1];    
+// 
+// console.log(asString(path));
+// var snapshots = smooth(path);
+// console.log(asString(snapshots[snapshots.length-1]));
+
 
 function smooth(path, weight_data, weight_smooth) { 
     if (!weight_data) {
@@ -38,7 +78,6 @@ function smooth(path, weight_data, weight_smooth) {
     var tolerance = 0.0001;
     var change = tolerance;
     var iter = 0;
-    
     while (change >= tolerance) {
         change = 0.0;
         for (var i=0; i<I; i++) {
@@ -72,7 +111,7 @@ function clone(path) {
     return newpath;
 }
 
-function log(path) {
+function asString(path) {
     var s = "";
     for (var i=0; i<I; i++) {
         if (i>0) {
@@ -87,5 +126,5 @@ function log(path) {
         }
         s += "]";
     }
-    console.log(s);
+    return s;
 }
